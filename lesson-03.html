@@ -5,7 +5,7 @@
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font-family:var(--sans)}#stage{position:fixed;inset:0;overflow:hidden}#deck{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}.slide{display:none;position:absolute;inset:0;width:1920px;height:1080px;padding:100px 120px 96px;background:var(--bg);flex-direction:column;overflow:hidden}.slide.active{display:flex}
 .chrome{position:absolute;top:48px;left:120px;right:120px;display:flex;justify-content:space-between;color:var(--muted);font:500 23px/1.2 var(--sans);letter-spacing:.14em}.chrome .section-name{color:var(--ink2)}.chrome .page-number{color:var(--muted);font:500 22px var(--mono);letter-spacing:.06em}
 .content{width:100%;margin:auto 0;display:flex;flex-direction:column;gap:30px}h1{font:500 108px/1.01 var(--serif);letter-spacing:-.03em;max-width:1680px;margin:0}h1 em{font-weight:500;color:var(--accent)}h2{font:400 32px/1.35 var(--sans);color:var(--ink2);max-width:1580px;margin:0}p{font:400 27px/1.36 var(--sans);color:var(--ink2);margin:0}
-.cover{padding-top:115px}.cover-marker{font:500 23px var(--mono);letter-spacing:.12em;color:var(--accent);margin-bottom:42px}.cover-body{display:grid;grid-template-columns:1fr 790px;gap:64px;align-items:center;flex:1}.cover h1{font-size:119px;line-height:1.02}.cover h2{margin-top:38px;max-width:720px}.cover-art{width:790px;height:665px;object-fit:contain;display:block}
+.cover{justify-content:center}.cover-title{width:100%}.cover h1{font-size:137px;line-height:1.10;letter-spacing:-.035em;max-width:1680px}
 .lead .content{gap:22px}.lead h1{font-size:99px}.lead h2{max-width:1500px}.lead-grid{display:grid;grid-template-columns:530px 1fr;gap:55px;align-items:center;margin-top:10px}.explain-list{display:flex;flex-direction:column}.explain-row{border-top:1px solid var(--rule);padding:22px 0}.explain-row span{color:var(--accent);font:500 22px var(--mono)}.explain-row h3{font:500 36px/1.14 var(--serif);margin:9px 0}.explain-row p{font-size:23px}.visual{margin:0}.visual img{display:block;width:100%;height:auto;object-fit:contain}.visual figcaption{color:var(--muted);font:400 19px/1.3 var(--sans);margin-top:12px}
 .uiux h1{font-size:106px}.uiux .content{gap:25px}.uiux .visual{margin-top:14px}.uiux .visual img{width:100%;max-height:545px}
 .journey h1{font-size:112px}.journey h2{max-width:1450px}.journey .visual{margin-top:17px}.journey .visual img{max-height:525px}.journey .note{margin-top:6px;border-top:1px solid var(--rule);padding-top:17px;font-size:24px}
@@ -26,11 +26,8 @@ button:disabled{opacity:.3;cursor:default}
 </style></head>
 <body><main id="stage"><div id="deck"><div id="strip">
 <section class="slide cover active" id="s1">
-<div class="cover-marker">АКАДЕМИЯ ИИ &nbsp;/&nbsp; УРОК 03</div>
-<div class="cover-body">
-<div><h1>Дизайн,<br>которым<br><em>пользуются</em></h1><h2>Интерфейс, графика и опыт человека. Как создавать не только работающие, но и удобные продукты.</h2></div>
-<img class="cover-art" src="assets/lesson-03-cover.svg" alt="Пример понятного интерфейса записи: боковое меню, выбор специалиста и времени." width="900" height="740">
-</div></section>
+<div class="cover-title"><h1>Даже самый<br>лучший код<br>может испортить<br><em>плохой дизайн.</em></h1></div>
+</section>
 <section class="slide design-beauty" id="s2">
 <div class="content"><div class="design-beauty-grid">
 <div class="design-beauty-side">
