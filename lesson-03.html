@@ -26,6 +26,11 @@ button:disabled{opacity:.3;cursor:default}
 
 /* Иллюстративное сравнение двух реальных интерфейсов: без подписей и кадрирования. */
 .slide.visual-comparison{padding:0}.visual-comparison-grid{width:100%;height:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;padding:55px 70px}.visual-comparison-grid img{display:block;width:100%;height:100%;min-width:0;min-height:0;object-fit:contain;object-position:center}
+
+/* Фото элементов UI в существующем левом окне иллюстрации. */
+.uiux .uiux-illustration{position:relative;width:1600px;max-width:100%;margin-top:14px}
+.uiux .uiux-illustration .uiux-graphic{display:block;width:100%;height:auto;max-height:none}
+.uiux .uiux-illustration .uiux-control-photo{position:absolute;left:3.3125%;top:27.15596%;width:40.5625%;height:63.11927%;display:block;object-fit:contain;background:#f8faf6;border-radius:12px;max-height:none}
 </style></head>
 <body><main id="stage"><div id="deck"><div id="strip">
 <section class="slide cover active" id="s1">
@@ -53,7 +58,7 @@ button:disabled{opacity:.3;cursor:default}
 <section class="slide uiux" id="s4">
 <header class="chrome"><span class="section-name">UI И UX</span><span class="page-number">04 / 06</span></header>
 <div class="content"><h1><em>UI</em> — интерфейс. <em>UX</em> — опыт.</h1><h2>UI определяет, что человек видит и с чем взаимодействует. UX охватывает весь путь к результату, включая удобство действий.</h2>
-<figure class="visual"><img src="assets/lesson-03-ui-ux.svg" width="1600" height="545" alt="Слева UI: экран с выбором времени записи и кнопкой продолжения. Справа UX: последовательность от поиска услуги до подтверждения записи."><figcaption>Один продукт: внешний вид экрана и весь сценарий его использования.</figcaption></figure></div></section>
+<figure class="visual uiux-illustration"><img class="uiux-graphic" src="assets/lesson-03-ui-ux.svg" width="1600" height="545" alt="Слева UI: экран с выбором времени записи и кнопкой продолжения. Справа UX: последовательность от поиска услуги до подтверждения записи."><img class="uiux-control-photo" src="assets/lesson-03-ui-controls.png" alt="Физические переключатели, кнопки, регуляторы и индикаторы как пример элементов пользовательского интерфейса" width="737" height="535"><figcaption>Один продукт: внешний вид экрана и весь сценарий его использования.</figcaption></figure></div></section>
 <section class="slide journey" id="s5">
 <header class="chrome"><span class="section-name">ПУТЬ ПОЛЬЗОВАТЕЛЯ</span><span class="page-number">05 / 06</span></header>
 <div class="content"><h1>Путь <em>пользователя</em></h1><h2>Пример: человек хочет записаться на консультацию через сайт. Его цель — подтверждённая запись, а не заполненная анкета.</h2>
