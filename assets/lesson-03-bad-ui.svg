@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="910" height="540" viewBox="0 0 910 540" role="img">
+  <rect x="0" y="0" width="910" height="540" rx="14" fill="#f1f0eb" stroke="#bcb8b1" stroke-width="2"/>
+  <rect x="0" y="0" width="910" height="61" rx="14" fill="#6d607b" stroke="none" stroke-width="1"/><rect x="0" y="45" width="910" height="16" rx="0" fill="#6d607b" stroke="none" stroke-width="1"/>
+  <text x="28" y="39" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" >Онлайн-сервис / запись / услуги / личный кабинет</text>
+  <rect x="25" y="82" width="860" height="77" rx="4" fill="#e7d4bd" stroke="none" stroke-width="1"/>
+  <text x="40" y="112" fill="#704f36" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" >ВНИМАНИЕ! У нас изменились условия. Вся информация ниже.</text>
+  <text x="40" y="139" fill="#8d654b" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" >Для завершения заполните форму и ознакомьтесь с правилами.</text>
+  <text x="26" y="194" fill="#303035" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" >ЗАПИСЬ  /  ЗАЯВКА  /  АНКЕТА</text>
+  <rect x="25" y="210" width="422" height="45" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/><text x="37" y="239" fill="#959595" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" >Фамилия, имя, отчество*</text>
+  <rect x="462" y="210" width="423" height="45" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/><text x="475" y="239" fill="#959595" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" >Телефон / email*</text>
+  <rect x="25" y="266" width="422" height="45" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/><text x="37" y="295" fill="#959595" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" >Тип услуги / профиль / отделение*</text>
+  <rect x="462" y="266" width="423" height="45" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/><text x="475" y="295" fill="#959595" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" >Дата / время / специалист*</text>
+  <rect x="25" y="324" width="860" height="43" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/><text x="37" y="351" fill="#959595" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" >Комментарий, примечания, пожелания, детали</text>
+  <rect x="27" y="386" width="20" height="20" rx="2" fill="#fff" stroke="#777" stroke-width="1"/><text x="58" y="403" fill="#555" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" >Подтверждаю обработку данных и прочёл условия оказания услуг</text>
+  <rect x="27" y="419" width="20" height="20" rx="2" fill="#fff" stroke="#777" stroke-width="1"/><text x="58" y="436" fill="#555" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" >Получать новости и согласен с уведомлениями</text>
+  <rect x="26" y="463" width="180" height="51" rx="0" fill="#b8b4af" stroke="none" stroke-width="1"/><text x="57" y="495" fill="#282828" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" >НАЗАД</text>
+  <rect x="217" y="463" width="260" height="51" rx="0" fill="#967fa8" stroke="none" stroke-width="1"/><text x="235" y="495" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" >ПРОВЕРИТЬ ДАННЫЕ</text>
+  <rect x="490" y="463" width="240" height="51" rx="0" fill="#ba6244" stroke="none" stroke-width="1"/><text x="532" y="495" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" >ОТПРАВИТЬ</text>
+  <rect x="743" y="463" width="142" height="51" rx="0" fill="#d3caa7" stroke="none" stroke-width="1"/><text x="772" y="495" fill="#272727" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" >ПОМОЩЬ</text>
+</svg>

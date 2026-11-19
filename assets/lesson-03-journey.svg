@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="525" viewBox="0 0 1600 525" role="img">
+  <text x="10" y="50" fill="#b8b5ac" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" letter-spacing='1.6'>СЦЕНАРИЙ: ЧЕЛОВЕК ХОЧЕТ ЗАПИСАТЬСЯ НА УСЛУГУ</text>
+  <line x1="166" y1="216" x2="1456" y2="216" stroke="#42583a" stroke-width="5"/>
+  
+    <rect x="5" y="101" width="376" height="380" rx="18" fill="#171a16" stroke="#3b4435" stroke-width="2"/>
+    <rect x="30" y="129" width="72" height="43" rx="10" fill="#273422" stroke="none" stroke-width="1"/>
+    <text x="50" y="158" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >01</text>
+    <text x="30" y="221" fill="#f2f1ec" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" >Найти услугу</text>
+    <line x1="30" y1="248" x2="352" y2="248" stroke="#414a3e" stroke-width="2"/>
+    <text x="30" y="293" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >Понятное название</text>
+    <text x="30" y="349" fill="#b8b5ac" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="400" >Вижу нужную услугу</text>
+    <rect x="30" y="407" width="110" height="4" rx="2" fill="#677f50" stroke="none" stroke-width="1"/>
+  
+    <rect x="409" y="101" width="376" height="380" rx="18" fill="#171a16" stroke="#3b4435" stroke-width="2"/>
+    <rect x="434" y="129" width="72" height="43" rx="10" fill="#273422" stroke="none" stroke-width="1"/>
+    <text x="454" y="158" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >02</text>
+    <text x="434" y="221" fill="#f2f1ec" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" >Выбрать время</text>
+    <line x1="434" y1="248" x2="756" y2="248" stroke="#414a3e" stroke-width="2"/>
+    <text x="434" y="293" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >Свободные интервалы</text>
+    <text x="434" y="349" fill="#b8b5ac" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="400" >Выбираю без звонка</text>
+    <rect x="434" y="407" width="110" height="4" rx="2" fill="#677f50" stroke="none" stroke-width="1"/>
+  
+    <rect x="813" y="101" width="376" height="380" rx="18" fill="#171a16" stroke="#3b4435" stroke-width="2"/>
+    <rect x="838" y="129" width="72" height="43" rx="10" fill="#273422" stroke="none" stroke-width="1"/>
+    <text x="858" y="158" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >03</text>
+    <text x="838" y="221" fill="#f2f1ec" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" >Оставить контакты</text>
+    <line x1="838" y1="248" x2="1160" y2="248" stroke="#414a3e" stroke-width="2"/>
+    <text x="838" y="293" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >Только нужные поля</text>
+    <text x="838" y="349" fill="#b8b5ac" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="400" >Не трачу время</text>
+    <rect x="838" y="407" width="110" height="4" rx="2" fill="#677f50" stroke="none" stroke-width="1"/>
+  
+    <rect x="1217" y="101" width="376" height="380" rx="18" fill="#171a16" stroke="#3b4435" stroke-width="2"/>
+    <rect x="1242" y="129" width="72" height="43" rx="10" fill="#c9ff3d" stroke="none" stroke-width="1"/>
+    <text x="1262" y="158" fill="#1c2b1a" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >04</text>
+    <text x="1242" y="221" fill="#f2f1ec" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" >Получить подтверждение</text>
+    <line x1="1242" y1="248" x2="1564" y2="248" stroke="#414a3e" stroke-width="2"/>
+    <text x="1242" y="293" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" >Дата и место записи</text>
+    <text x="1242" y="349" fill="#b8b5ac" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="400" >Понимаю, что всё готово</text>
+    <rect x="1242" y="407" width="110" height="4" rx="2" fill="#c9ff3d" stroke="none" stroke-width="1"/>
+  
+</svg>

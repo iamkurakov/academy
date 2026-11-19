@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a0a0a"><title>Урок 3 · Дизайн, которым пользуются — Академия ИИ</title><meta name="description" content="Урок 3: основы UI и UX, путь пользователя, сравнение удобного и неудобного интерфейса.">
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap');
+:root{--bg:#0A0A0A;--ink:#F2F1EC;--ink2:#B8B5AC;--muted:#6E6A60;--rule:#2A2925;--card:#131211;--accent:#C9FF3D;--serif:'Playfair Display',Georgia,serif;--sans:'Inter Tight',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font-family:var(--sans)}#stage{position:fixed;inset:0;overflow:hidden}#deck{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}.slide{display:none;position:absolute;inset:0;width:1920px;height:1080px;padding:100px 120px 96px;background:var(--bg);flex-direction:column;overflow:hidden}.slide.active{display:flex}
+.chrome{position:absolute;top:48px;left:120px;right:120px;display:flex;justify-content:space-between;color:var(--muted);font:500 23px/1.2 var(--sans);letter-spacing:.14em}.chrome .section-name{color:var(--ink2)}.chrome .page-number{color:var(--muted);font:500 22px var(--mono);letter-spacing:.06em}
+.content{width:100%;margin:auto 0;display:flex;flex-direction:column;gap:30px}h1{font:500 108px/1.01 var(--serif);letter-spacing:-.03em;max-width:1680px;margin:0}h1 em{font-weight:500;color:var(--accent)}h2{font:400 32px/1.35 var(--sans);color:var(--ink2);max-width:1580px;margin:0}p{font:400 27px/1.36 var(--sans);color:var(--ink2);margin:0}
+.cover{padding-top:115px}.cover-marker{font:500 23px var(--mono);letter-spacing:.12em;color:var(--accent);margin-bottom:42px}.cover-body{display:grid;grid-template-columns:1fr 790px;gap:64px;align-items:center;flex:1}.cover h1{font-size:119px;line-height:1.02}.cover h2{margin-top:38px;max-width:720px}.cover-art{width:790px;height:665px;object-fit:contain;display:block}
+.lead .content{gap:22px}.lead h1{font-size:99px}.lead h2{max-width:1500px}.lead-grid{display:grid;grid-template-columns:530px 1fr;gap:55px;align-items:center;margin-top:10px}.explain-list{display:flex;flex-direction:column}.explain-row{border-top:1px solid var(--rule);padding:22px 0}.explain-row span{color:var(--accent);font:500 22px var(--mono)}.explain-row h3{font:500 36px/1.14 var(--serif);margin:9px 0}.explain-row p{font-size:23px}.visual{margin:0}.visual img{display:block;width:100%;height:auto;object-fit:contain}.visual figcaption{color:var(--muted);font:400 19px/1.3 var(--sans);margin-top:12px}
+.uiux h1{font-size:106px}.uiux .content{gap:25px}.uiux .visual{margin-top:14px}.uiux .visual img{width:100%;max-height:545px}
+.journey h1{font-size:112px}.journey h2{max-width:1450px}.journey .visual{margin-top:17px}.journey .visual img{max-height:525px}.journey .note{margin-top:6px;border-top:1px solid var(--rule);padding-top:17px;font-size:24px}
+.compare h1{font-size:91px}.compare h2{font-size:30px}.compare .content{gap:20px}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:10px}.compare-grid figure{margin:0}.compare-label{display:flex;gap:18px;align-items:baseline;margin-bottom:15px}.compare-label span{font:500 22px var(--mono);color:var(--accent)}.compare-label strong{font:500 32px var(--serif)}.compare-grid img{width:100%;max-height:445px;object-fit:contain;display:block}.compare-grid figcaption{margin-top:12px;color:var(--ink2);font:400 22px/1.28 var(--sans)}.compare .summary{border-top:1px solid var(--rule);padding-top:17px;margin-top:5px;font-size:25px;color:var(--ink)}
+#nav{position:fixed;z-index:20;right:22px;bottom:14px;display:flex;gap:10px;align-items:center}button,.back{border:1px solid #393832;background:#141311;color:var(--ink);padding:9px 14px;cursor:pointer;font:500 16px var(--sans)}button:focus-visible,.back:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.back{color:var(--accent);text-decoration:none}#counter{color:var(--muted);font:500 14px var(--mono)}
+@media print{html,body{height:auto;overflow:visible}#stage{position:static;overflow:visible}#deck{position:static;transform:none!important}.slide{position:relative;display:flex!important;break-after:page}#nav{display:none}}
+</style></head>
+<body><main id="stage"><div id="deck">
+<section class="slide cover active" id="s1">
+<div class="cover-marker">АКАДЕМИЯ ИИ &nbsp;/&nbsp; УРОК 03</div>
+<div class="cover-body">
+<div><h1>Дизайн,<br>которым<br><em>пользуются</em></h1><h2>Интерфейс, графика и опыт человека. Как создавать не только работающие, но и удобные продукты.</h2></div>
+<img class="cover-art" src="assets/lesson-03-cover.svg" alt="Пример понятного интерфейса записи: боковое меню, выбор специалиста и времени." width="900" height="740">
+</div></section>
+<section class="slide lead" id="s2">
+<header class="chrome"><span class="section-name">ДИЗАЙН И ЧЕЛОВЕК</span><span class="page-number">02 / 05</span></header>
+<div class="content"><h1>Работает — не значит <em>удобно</em></h1><h2>Программа может правильно принимать заявки, но человеку всё равно трудно ею пользоваться.</h2>
+<div class="lead-grid"><div class="explain-list">
+<div class="explain-row"><span>01</span><h3>Непонятно, с чего начать</h3><p>Главное действие теряется среди других.</p></div>
+<div class="explain-row"><span>02</span><h3>Слишком много решений</h3><p>Человек тратит время на поиск нужного.</p></div>
+<div class="explain-row"><span>03</span><h3>Нет ясного результата</h3><p>После отправки формы непонятно, выполнена ли задача.</p></div>
+</div><figure class="visual"><img src="assets/lesson-03-bad-ui.svg" width="910" height="540" alt="Иллюстрация перегруженной формы записи: много полей, уведомлений и одинаково заметных кнопок."><figcaption>Учебный пример: технически работающая, но перегруженная форма записи.</figcaption></figure>
+</div></div></section>
+<section class="slide uiux" id="s3">
+<header class="chrome"><span class="section-name">UI И UX</span><span class="page-number">03 / 05</span></header>
+<div class="content"><h1><em>UI</em> — интерфейс. <em>UX</em> — опыт.</h1><h2>UI определяет, что человек видит и с чем взаимодействует. UX охватывает весь путь к результату, включая удобство действий.</h2>
+<figure class="visual"><img src="assets/lesson-03-ui-ux.svg" width="1600" height="545" alt="Слева UI: экран с выбором времени записи и кнопкой продолжения. Справа UX: последовательность от поиска услуги до подтверждения записи."><figcaption>Один продукт: внешний вид экрана и весь сценарий его использования.</figcaption></figure></div></section>
+<section class="slide journey" id="s4">
+<header class="chrome"><span class="section-name">ПУТЬ ПОЛЬЗОВАТЕЛЯ</span><span class="page-number">04 / 05</span></header>
+<div class="content"><h1>Путь <em>пользователя</em></h1><h2>Пример: человек хочет записаться на консультацию через сайт. Его цель — подтверждённая запись, а не заполненная анкета.</h2>
+<figure class="visual"><img src="assets/lesson-03-journey.svg" width="1600" height="525" alt="Четыре этапа записи: найти услугу, выбрать время, оставить контакты и получить подтверждение. Для каждого этапа показан понятный пользователю результат."></figure>
+<p class="note">Если на одном из этапов возникает препятствие, человек может отказаться от записи — даже когда все кнопки технически работают.</p></div></section>
+<section class="slide compare" id="s5">
+<header class="chrome"><span class="section-name">ОДНА ЗАДАЧА · ДВА РЕЗУЛЬТАТА</span><span class="page-number">05 / 05</span></header>
+<div class="content"><h1>Одна задача — <em>два результата</em></h1><h2>Оба экрана позволяют записаться на консультацию. Разница — в количестве усилий, которые требуются от человека.</h2>
+<div class="compare-grid">
+<figure><div class="compare-label"><span>01</span><strong>До: перегруженный экран</strong></div><img src="assets/lesson-03-bad-ui.svg" width="910" height="540" alt="Неудобная форма записи с несколькими кнопками и большим числом полей."><figcaption>Много обязательных полей, неясный порядок действий, конкурирующие кнопки.</figcaption></figure>
+<figure><div class="compare-label"><span>02</span><strong>После: понятный сценарий</strong></div><img src="assets/lesson-03-good-ui.svg" width="910" height="540" alt="Удобный экран записи с выбором специалиста, свободного времени и одной кнопкой продолжения."><figcaption>Действия разделены на шаги, варианты хорошо видны, следующий шаг очевиден.</figcaption></figure>
+</div><p class="summary">Хороший дизайн не добавляет украшения. Он помогает человеку быстрее и понятнее решить задачу.</p></div></section>
+</div></main>
+<nav id="nav" aria-label="Навигация по слайдам"><span id="counter">01 / 05</span><button id="prev" aria-label="Предыдущий слайд">←</button><button id="next" aria-label="Следующий слайд">→</button><a class="back" href="./">Все уроки</a></nav>
+<script>
+const slides=[...document.querySelectorAll('.slide')],deck=document.querySelector('#deck');let pos=0;
+function fit(){const z=Math.min(innerWidth/1920,innerHeight/1080);deck.style.transform='scale('+z+')';deck.style.left=(innerWidth-1920*z)/2+'px';deck.style.top=(innerHeight-1080*z)/2+'px'}
+addEventListener('resize',fit);fit();
+function show(i){pos=Math.max(0,Math.min(slides.length-1,i));slides.forEach((el,j)=>el.classList.toggle('active',j===pos));document.querySelector('#counter').textContent=String(pos+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');history.replaceState(null,'','#s'+(pos+1))}
+document.querySelector('#prev').onclick=()=>show(pos-1);document.querySelector('#next').onclick=()=>show(pos+1);
+addEventListener('keydown',e=>{if(e.target.closest('input,textarea,select,[contenteditable]'))return;if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(pos+1)}if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();show(pos-1)}if(e.key==='Home'){e.preventDefault();show(0)}if(e.key==='End'){e.preventDefault();show(slides.length-1)}if(e.key.toLowerCase()==='f'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.()}});
+let touch=0;addEventListener('touchstart',e=>touch=e.changedTouches[0].screenX,{passive:true});addEventListener('touchend',e=>{const d=e.changedTouches[0].screenX-touch;if(Math.abs(d)>70)show(pos+(d<0?1:-1))},{passive:true});const ix=Number(location.hash.replace('#s',''));if(Number.isInteger(ix)&&ix>0&&ix<=slides.length)show(ix-1);addEventListener('hashchange',()=>{const page=Number(location.hash.replace('#s',''));if(Number.isInteger(page)&&page>=1&&page<=slides.length)show(page-1)});
+</script></body></html>
