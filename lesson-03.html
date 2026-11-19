@@ -31,6 +31,9 @@ button:disabled{opacity:.3;cursor:default}
 .uiux .uiux-illustration{position:relative;width:1600px;max-width:100%;margin-top:14px}
 .uiux .uiux-illustration .uiux-graphic{display:block;width:100%;height:auto;max-height:none}
 .uiux .uiux-illustration .uiux-control-photo{position:absolute;left:53px;top:148px;width:649px;height:344px;display:block;object-fit:contain;background:#f8faf6;border-radius:12px;max-height:none}
+
+/* Слайд 5: три равноправных элемента дизайна, без декоративных меток. */
+.design-elements .content{gap:0}.design-elements-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:58px;align-items:start;width:100%}.design-element h1{font:500 112px/1.08 var(--serif);letter-spacing:-.035em;margin:0 0 44px;white-space:nowrap}.design-element p{font:400 34px/1.32 var(--sans);color:var(--ink2);margin:0}
 </style></head>
 <body><main id="stage"><div id="deck"><div id="strip">
 <section class="slide cover active" id="s1">
@@ -59,11 +62,15 @@ button:disabled{opacity:.3;cursor:default}
 <header class="chrome"><span class="section-name">UI И UX</span><span class="page-number">04 / 06</span></header>
 <div class="content"><h1><em>UI</em> — интерфейс. <em>UX</em> — опыт.</h1><h2>UI определяет, что человек видит и с чем взаимодействует. UX охватывает весь путь к результату, включая удобство действий.</h2>
 <figure class="visual uiux-illustration"><img class="uiux-graphic" src="assets/lesson-03-ui-ux.svg" width="1600" height="545" alt="Слева UI: экран с выбором времени записи и кнопкой продолжения. Справа UX: последовательность от поиска услуги до подтверждения записи."><img class="uiux-control-photo" src="assets/lesson-03-ui-controls.png" alt="Физические переключатели, кнопки, регуляторы и индикаторы как пример элементов пользовательского интерфейса" width="737" height="535"><figcaption>Один продукт: внешний вид экрана и весь сценарий его использования.</figcaption></figure></div></section>
-<section class="slide journey" id="s5">
-<header class="chrome"><span class="section-name">ПУТЬ ПОЛЬЗОВАТЕЛЯ</span><span class="page-number">05 / 06</span></header>
-<div class="content"><h1>Путь <em>пользователя</em></h1><h2>Пример: человек хочет записаться на консультацию через сайт. Его цель — подтверждённая запись, а не заполненная анкета.</h2>
-<figure class="visual"><img src="assets/lesson-03-journey.svg" width="1600" height="525" alt="Четыре этапа записи: найти услугу, выбрать время, оставить контакты и получить подтверждение. Для каждого этапа показан понятный пользователю результат."></figure>
-<p class="note">Если на одном из этапов возникает препятствие, человек может отказаться от записи — даже когда все кнопки технически работают.</p></div></section>
+<section class="slide design-elements" id="s5">
+<div class="content">
+<div class="design-elements-grid">
+<div class="design-element"><h1>ЦВЕТ</h1><p>фон / элементы</p></div>
+<div class="design-element"><h1>ТЕКСТ</h1><p>шрифт / вёрстка</p></div>
+<div class="design-element"><h1>ФОРМА</h1><p>пространство / объекты</p></div>
+</div>
+</div>
+</section>
 <section class="slide compare" id="s6">
 <header class="chrome"><span class="section-name">ОДНА ЗАДАЧА · ДВА РЕЗУЛЬТАТА</span><span class="page-number">06 / 06</span></header>
 <div class="content"><h1>Одна задача — <em>два результата</em></h1><h2>Оба экрана позволяют записаться на консультацию. Разница — в количестве усилий, которые требуются от человека.</h2>
