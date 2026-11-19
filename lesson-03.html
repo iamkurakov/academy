@@ -56,6 +56,15 @@ button:disabled{opacity:.3;cursor:default}
 .skill-prompt-preview{display:block;white-space:pre-wrap;word-break:break-word;overflow:hidden;flex:1;min-height:0;font:400 14px/1.46 var(--mono);color:var(--ink2);margin:24px 0 15px;mask-image:linear-gradient(to bottom,#000 75%,transparent 100%)}
 .skill-prompt-footer{color:var(--accent);font:500 20px/1.25 var(--sans);flex:none}
 .skill-prompt-raw{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;left:-9999px;top:0}
+
+/* Урок 3 · слайд 7: три связанных понятия в типографической иерархии. */
+.design-terminology{justify-content:center}
+.design-terminology .content{gap:0;margin:auto 0}
+.terminology-row{display:grid;grid-template-columns:670px minmax(0,1fr);column-gap:85px;align-items:center;min-height:250px;padding:35px 0;border-bottom:1px solid var(--rule)}
+.terminology-row:first-child{border-top:1px solid var(--rule)}
+.terminology-row h1{font:500 91px/1.06 var(--serif);letter-spacing:-.035em;margin:0}
+.terminology-row h1 em{font-weight:400}
+.terminology-row p{font:400 39px/1.34 var(--sans);color:var(--ink2);max-width:900px;margin:0}
 </style></head>
 <body><main id="stage"><div id="deck"><div id="strip">
 <section class="slide cover active" id="s1">
@@ -81,7 +90,7 @@ button:disabled{opacity:.3;cursor:default}
 <img src="assets/lesson-03-modern-interface.png" alt="Современный рабочий кабинет с календарём, задачами и записью встреч" width="1428" height="890">
 </div></section>
 <section class="slide uiux" id="s4">
-<header class="chrome"><span class="section-name">UI И UX</span><span class="page-number">04 / 06</span></header>
+<header class="chrome"><span class="section-name">UI И UX</span><span class="page-number">04 / 07</span></header>
 <div class="content"><h1><em>UI</em> — интерфейс. <em>UX</em> — опыт.</h1><h2>UI определяет, что человек видит и с чем взаимодействует. UX охватывает весь путь к результату, включая удобство действий.</h2>
 <figure class="visual uiux-illustration"><img class="uiux-graphic" src="assets/lesson-03-ui-ux.svg" width="1600" height="545" alt="Слева UI: экран с выбором времени записи и кнопкой продолжения. Справа UX: последовательность от поиска услуги до подтверждения записи."><img class="uiux-control-photo" src="assets/lesson-03-ui-controls.png" alt="Физические переключатели, кнопки, регуляторы и индикаторы как пример элементов пользовательского интерфейса" width="737" height="535"><figcaption>Один продукт: внешний вид экрана и весь сценарий его использования.</figcaption></figure></div></section>
 <section class="slide design-elements" id="s5">
@@ -766,8 +775,24 @@ design-skill/
 </div>
 </div>
 </section>
+<section class="slide design-terminology" id="s7">
+<div class="content">
+<div class="terminology-row">
+<h1>Дизайн-<em>система</em></h1>
+<p>Сами правила, компоненты и примеры.</p>
+</div>
+<div class="terminology-row">
+<h1><em>MD</em>-файл</h1>
+<p>Способ документировать эти правила.</p>
+</div>
+<div class="terminology-row">
+<h1>Скилл</h1>
+<p>Инструкция для ИИ: как применять правила при выполнении конкретных задач.</p>
+</div>
+</div>
+</section>
 </div></div></main>
-<nav id="nav" aria-label="Навигация по слайдам"><span id="counter">01 / 06</span><button id="prev" aria-label="Предыдущий слайд">←</button><button id="next" aria-label="Следующий слайд">→</button><a class="back" href="./">Все уроки</a></nav>
+<nav id="nav" aria-label="Навигация по слайдам"><span id="counter">01 / 07</span><button id="prev" aria-label="Предыдущий слайд">←</button><button id="next" aria-label="Следующий слайд">→</button><a class="back" href="./">Все уроки</a></nav>
 <script>
 const slides=[...document.querySelectorAll('#strip>.slide')],deck=document.querySelector('#deck'),strip=document.querySelector('#strip'),prev=document.querySelector('#prev'),next=document.querySelector('#next'),counter=document.querySelector('#counter');let pos=0;
 function fit(){const z=Math.min(innerWidth/1920,innerHeight/1080);deck.style.transform='scale('+z+')';deck.style.left=(innerWidth-1920*z)/2+'px';deck.style.top=(innerHeight-1080*z)/2+'px'}
