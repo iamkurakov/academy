@@ -20,21 +20,17 @@
 button:disabled{opacity:.3;cursor:default}
 @media(prefers-reduced-motion:reduce){#strip{scroll-behavior:auto}}
 @media print{#stage,#deck,#strip{height:auto}#deck{left:auto!important;top:auto!important}#strip{display:block;width:1920px;overflow:visible;scroll-snap-type:none}#strip>.slide{position:relative;display:flex!important;flex:none}}
+
+/* Слайд 2: сравнение без декоративной метаинформации. */
+.design-beauty .content{gap:0}.design-beauty-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:start}.design-beauty-side h1{font-size:122px;line-height:1.06;margin:0 0 36px}.design-beauty-side h2{font:500 54px/1.12 var(--serif);color:var(--accent);margin:0 0 35px}.design-beauty-side p{font-size:33px;line-height:1.34;color:var(--ink2);margin:0 0 22px;max-width:700px}
 </style></head>
 <body><main id="stage"><div id="deck"><div id="strip">
-<section class="slide cover active" id="s1">
-<div class="cover-marker">АКАДЕМИЯ ИИ &nbsp;/&nbsp; УРОК 03</div>
-<div class="cover-body">
-<div><h1>Дизайн,<br>которым<br><em>пользуются</em></h1><h2>Интерфейс, графика и опыт человека. Как создавать не только работающие, но и удобные продукты.</h2></div>
-<img class="cover-art" src="assets/lesson-03-cover.svg" alt="Пример понятного интерфейса записи: боковое меню, выбор специалиста и времени." width="900" height="740">
-</div></section>
-<section class="slide lead" id="s2">
-<header class="chrome"><span class="section-name">ДИЗАЙН И ЧЕЛОВЕК</span><span class="page-number">02 / 05</span></header>
-<div class="content"><h1>Работает — не значит <em>удобно</em></h1><h2>Программа может правильно принимать заявки, но человеку всё равно трудно ею пользоваться.</h2>
-<div class="lead-grid"><div class="explain-list">
-<div class="explain-row"><span>01</span><h3>Непонятно, с чего начать</h3><p>Главное действие теряется среди других.</p></div>
-<div class="explain-row"><span>02</span><h3>Слишком много решений</h3><p>Человек тратит время на поиск нужного.</p></div>
-<div class="explain-row"><span>03</span><h3>Нет ясного результата</h3><p>После отправки формы непонятно, выполнена ли задача.</p></div>
+<section class="slide cover active" i<section class="slide design-beauty" id="s2">
+<div class="content"><div class="design-beauty-grid">
+<div class="design-beauty-side"><h1>ДИЗАЙН</h1><h2>Функция</h2><p>Решает конкретную задачу.</p><p>Делает использование понятным и удобным.</p><p>Определяет, как объект работает.</p></div>
+<div class="design-beauty-side"><h1>КРАСОТА</h1><h2>Эстетика</h2><p>Создаёт визуальное впечатление.</p><p>Вызывает эмоциональную реакцию.</p><p>Определяет, как объект воспринимается.</p></div>
+</div></div></section>
+ss="explain-row"><span>03</span><h3>Нет ясного результата</h3><p>После отправки формы непонятно, выполнена ли задача.</p></div>
 </div><figure class="visual"><img src="assets/lesson-03-bad-ui.svg" width="910" height="540" alt="Иллюстрация перегруженной формы записи: много полей, уведомлений и одинаково заметных кнопок."><figcaption>Учебный пример: технически работающая, но перегруженная форма записи.</figcaption></figure>
 </div></div></section>
 <section class="slide uiux" id="s3">
