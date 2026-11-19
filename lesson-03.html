@@ -65,6 +65,37 @@ button:disabled{opacity:.3;cursor:default}
 .terminology-row h1{font:500 91px/1.06 var(--serif);letter-spacing:-.035em;margin:0}
 .terminology-row h1 em{font-weight:400}
 .terminology-row p{font:400 39px/1.34 var(--sans);color:var(--ink2);max-width:900px;margin:0}
+
+/* Четыре новых экрана — крупная антиква, смысловой акцент и без лишних колонтитулов. */
+.design-beauty-grid{position:relative}
+.design-beauty-grid::after{content:"≠";position:absolute;left:50%;top:2px;transform:translateX(-50%);color:var(--accent);font:500 112px/1 var(--serif);pointer-events:none}
+.prompt-concept{justify-content:center}
+.prompt-concept .content{gap:78px}
+.prompt-concept h1{font:500 106px/1.09 var(--serif);letter-spacing:-.035em;max-width:1680px}
+.prompt-concept .prompt-statement{padding:15px 0 15px 40px;border-left:5px solid var(--accent);font:400 49px/1.34 var(--sans);color:var(--ink2);max-width:1560px}
+.slide.aiwa-image{padding:0;justify-content:center;align-items:center}
+.aiwa-image img{display:block;width:100%;height:100%;object-fit:contain}
+.selling-design .content{gap:30px}
+.selling-design h1{font:500 89px/1.06 var(--serif);letter-spacing:-.035em;max-width:1680px}
+.selling-design .sales-example{display:flex;align-items:center;justify-content:center;margin:0;width:100%;height:675px}
+.selling-design .sales-example img{display:block;width:100%;height:100%;object-fit:contain}
+.devices-slide .content{gap:38px}
+.devices-slide h1{font:500 88px/1.06 var(--serif);letter-spacing:-.035em;max-width:1680px}
+.devices-layout{display:grid;grid-template-columns:1fr 1fr;gap:95px;align-items:start}
+.devices-item{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+.devices-value{font:500 156px/1 var(--serif);letter-spacing:-.06em;color:var(--ink)}
+.devices-value em{font-style:italic;color:var(--accent)}
+.devices-category{font:500 45px/1.12 var(--serif);color:var(--ink)}
+.devices-visual{grid-column:1/-1;height:290px;margin-top:25px;display:flex;justify-content:center;align-items:center}
+.device-desktop{width:450px;height:240px;border:10px solid var(--ink2);border-radius:12px 12px 4px 4px;padding:25px;background:#171915;position:relative}
+.device-desktop::after{content:"";position:absolute;bottom:-30px;left:37%;width:26%;height:19px;border-top:10px solid var(--ink2);border-bottom:8px solid var(--ink2)}
+.device-desktop .device-bar{background:var(--accent);width:66%;height:25px}
+.device-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.device-row span{height:85px;background:#454740}
+.device-phone{width:180px;height:295px;border:10px solid var(--ink2);border-radius:31px;background:#171915;padding:24px 13px 16px;display:flex;flex-direction:column;gap:11px}
+.device-phone span{flex:1;background:#454740}
+.device-phone span:first-child{flex:.6;background:var(--accent)}
+.devices-note{font:400 31px/1.36 var(--sans);color:var(--ink2);max-width:1590px;margin-top:12px}
 </style></head>
 <body><main id="stage"><div id="deck"><div id="strip">
 <section class="slide cover active" id="s1">
@@ -84,16 +115,33 @@ button:disabled{opacity:.3;cursor:default}
 </div>
 </div></div>
 </section>
-<section class="slide visual-comparison" id="s3">
+<section class="slide prompt-concept" id="s3">
+<div class="content"><h1>Подробный запрос для <em>оформления</em> не менее важен, чем запрос на создание кода.</h1>
+<p class="prompt-statement">Промпт: «Изобрази быструю японскую, с 4-я колесами, громкую, чтобы могла двигаться взад-вперёд».</p></div></section>
+<section class="slide aiwa-image" id="s4">
+<img src="assets/lesson-03-red-aiwa.png" width="1648" height="928" alt="Винтажный красный кассетный плеер AIWA с видимой кассетой и регуляторами">
+</section>
+<section class="slide selling-design" id="s5">
+<div class="content"><h1>КОГДА ДИЗАЙН<br><em>ПОМОГАЕТ ПРОДАВАТЬ</em></h1>
+<figure class="sales-example"><img src="assets/lesson-03-books-site.png" width="1600" height="946" alt="Скриншот сайта выбора детских книг: иллюстрации сюжетов, описания, цена и кнопки заказа"></figure></div></section>
+<section class="slide devices-slide" id="s6">
+<div class="content"><h1>Один интерфейс — <em>два экрана</em></h1>
+<div class="devices-layout">
+<div class="devices-item"><div class="devices-value">15<em>%</em></div><div class="devices-category">Компьютер</div><div class="devices-visual"><div class="device-desktop" aria-label="Схема компьютерного интерфейса"><div class="device-bar"></div><div class="device-row"><span></span><span></span><span></span></div></div></div></div>
+<div class="devices-item"><div class="devices-value">85<em>%</em></div><div class="devices-category">Смартфон</div><div class="devices-visual"><div class="device-phone" aria-label="Схема адаптированного мобильного интерфейса"><span></span><span></span><span></span></div></div></div>
+</div>
+<p class="devices-note">Нельзя просто уменьшить компьютерную страницу. Для смартфона ИИ должен перестроить структуру, размеры элементов и способы взаимодействия.</p>
+</div></section>
+<section class="slide visual-comparison" id="s7">
 <div class="visual-comparison-grid">
 <img src="assets/lesson-03-old-interface.png" alt="Старый перегруженный интерфейс электронного документооборота" width="540" height="554">
 <img src="assets/lesson-03-document-management-right.png" alt="Интерфейс системы документооборота и контроля исполнения с множеством полей, вкладок и элементов управления" width="986" height="746">
 </div></section>
-<section class="slide uiux" id="s4">
-<header class="chrome"><span class="section-name">UI И UX</span><span class="page-number">04 / 07</span></header>
+<section class="slide uiux" id="s8">
+<header class="chrome"><span class="section-name">UI И UX</span><span class="page-number">08 / 11</span></header>
 <div class="content"><h1><em>UI</em> — интерфейс. <em>UX</em> — опыт.</h1><h2>UI определяет, что человек видит и с чем взаимодействует. UX охватывает весь путь к результату, включая удобство действий.</h2>
 <figure class="visual uiux-illustration"><img class="uiux-graphic" src="assets/lesson-03-ui-ux.svg" width="1600" height="545" alt="Слева UI: экран с выбором времени записи и кнопкой продолжения. Справа UX: последовательность от поиска услуги до подтверждения записи."><img class="uiux-control-photo" src="assets/lesson-03-ui-controls.png" alt="Физические переключатели, кнопки, регуляторы и индикаторы как пример элементов пользовательского интерфейса" width="737" height="535"><figcaption>Один продукт: внешний вид экрана и весь сценарий его использования.</figcaption></figure></div></section>
-<section class="slide design-elements" id="s5">
+<section class="slide design-elements" id="s9">
 <div class="content">
 <div class="design-elements-grid">
 <article class="design-element">
@@ -117,7 +165,7 @@ button:disabled{opacity:.3;cursor:default}
 </div>
 </div>
 </section>
-<section class="slide skill-checklist" id="s6">
+<section class="slide skill-checklist" id="s10">
 <div class="content">
 <h1>Как создать <em>Design Skill</em></h1>
 <div class="skill-checklist-layout">
@@ -775,7 +823,7 @@ design-skill/
 </div>
 </div>
 </section>
-<section class="slide design-terminology" id="s7">
+<section class="slide design-terminology" id="s11">
 <div class="content">
 <div class="terminology-row">
 <h1>Дизайн-<em>система</em></h1>
@@ -792,7 +840,7 @@ design-skill/
 </div>
 </section>
 </div></div></main>
-<nav id="nav" aria-label="Навигация по слайдам"><span id="counter">01 / 07</span><button id="prev" aria-label="Предыдущий слайд">←</button><button id="next" aria-label="Следующий слайд">→</button><a class="back" href="./">Все уроки</a></nav>
+<nav id="nav" aria-label="Навигация по слайдам"><span id="counter">01 / 11</span><button id="prev" aria-label="Предыдущий слайд">←</button><button id="next" aria-label="Следующий слайд">→</button><a class="back" href="./">Все уроки</a></nav>
 <script>
 const slides=[...document.querySelectorAll('#strip>.slide')],deck=document.querySelector('#deck'),strip=document.querySelector('#strip'),prev=document.querySelector('#prev'),next=document.querySelector('#next'),counter=document.querySelector('#counter');let pos=0;
 function fit(){const z=Math.min(innerWidth/1920,innerHeight/1080);deck.style.transform='scale('+z+')';deck.style.left=(innerWidth-1920*z)/2+'px';deck.style.top=(innerHeight-1080*z)/2+'px'}
